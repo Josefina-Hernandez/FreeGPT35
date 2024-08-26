@@ -375,11 +375,11 @@ app.use((req, res) =>
 );
 
 // Start the server and the session ID refresh loop
-app.listen(port, async () => {
-  console.log(`💡 Server is running at http://localhost:${port}`);
+app.listen(port, '0.0.0.0', async () => {
+  console.log(`💡 Server is running at http://0.0.0.0:${port}`);
   console.log();
-  console.log(`🔗 Local Base URL: http://localhost:${port}/v1`);
-  console.log(`🔗 Local Endpoint: http://localhost:${port}/v1/chat/completions`);
+  console.log(`🔗 Local Base URL: http://0.0.0.0:${port}/v1`);
+  console.log(`🔗 Local Endpoint: http://0.0.0.0:${port}/v1/chat/completions`);
   console.log();
   console.log("📝 Original TS Source By: Pawan.Krd");
   console.log("📝 Modified By: Vincent");
